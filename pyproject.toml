@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podcast-agent"
+version = "0.1.0"
+description = "A daily laptop agent that finds podcasts and saves reviewed reels made with PodClipper."
+requires-python = ">=3.11,<3.13"
+readme = "README.md"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+dependencies = ["Pillow>=10.1", "PyYAML>=6.0", "yt-dlp[default]>=2026.8.19"]
+
+[project.optional-dependencies]
+instagram = ["instagrapi==3.2.1"]
+
+[project.scripts]
+podcast-agent = "podcast_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,9 @@
+markets = ["India", "US"]
+clips_per_day = 3
+output_dir = "data/reels"
+daily_time = "09:00"
+# timezone = "Asia/Kolkata"  # Omit for laptop local time.
+
+# Enable after connecting with ./run.sh instagram-login.
+# instagram = true
+# instagram_times = ["10:00", "14:00", "18:00"]

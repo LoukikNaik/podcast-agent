@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+.venv/
+agent.toml
+podclipper.yaml
+data/
+.cache/
+__pycache__/
+*.egg-info/
+.DS_Store
+
+
+.podclipper/
+
+# Private machine-specific operating notes and authentication exports
+OPERATIONS.local.md
+*.session.json
+cookies*.txt
